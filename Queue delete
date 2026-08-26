@@ -1,0 +1,7 @@
+#include <stdio.h>
+int main() {
+    int queue[5] = {10, 20};
+    int front = 0;
+    printf("Deleted element = %d", queue[front++]);
+    return 0;
+}
