@@ -1,0 +1,14 @@
+#include <stdio.h>
+
+int main() {
+    int stack[10], top = -1, n = 5, fact = 1;
+
+    while(n > 0)
+        stack[++top] = n--;
+
+    while(top != -1)
+        fact *= stack[top--];
+
+    printf("Factorial = %d", fact);
+    return 0;
+}
