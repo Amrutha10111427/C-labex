@@ -1,0 +1,10 @@
+#include <stdio.h>
+
+int main() {
+    int queue[5] = {10,20,30};
+    int front = 0;
+
+    printf("Front Element = %d", queue[front]);
+
+    return 0;
+}
