@@ -1,0 +1,12 @@
+#include <stdio.h>
+
+int main() {
+    int top = 4, size = 5;
+
+    if(top == size - 1)
+        printf("Stack is Full");
+    else
+        printf("Stack is Not Full");
+
+    return 0;
+}
