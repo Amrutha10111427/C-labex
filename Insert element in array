@@ -1,0 +1,10 @@
+#include <stdio.h>
+int main() {
+    int a[6]={10,20,40,50}, n=4, pos=2, val=30, i;
+    for(i=n;i>pos;i--)
+        a[i]=a[i-1];
+    a[pos]=val;
+    for(i=0;i<=n;i++)
+        printf("%d ",a[i]);
+    return 0;
+}
