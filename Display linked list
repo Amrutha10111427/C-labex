@@ -1,0 +1,22 @@
+#include <stdio.h>
+struct Node {
+    int data;
+    struct Node *next;
+};
+
+int main() {
+    struct Node n1={10,NULL}, n2={20,NULL}, n3={30,NULL};
+    n1.next=&n2;
+    n2.next=&n3;
+
+    int count=0;
+    struct Node *temp=&n1;
+
+    while(temp!=NULL){
+        count++;
+        temp=temp->next;
+    }
+
+    printf("Number of nodes = %d", count);
+    return 0;
+}
