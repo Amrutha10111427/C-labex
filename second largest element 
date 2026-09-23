@@ -1,0 +1,22 @@
+#include <stdio.h>
+
+int main()
+{
+    int arr[5] = {10, 20, 30, 40, 50};
+    int first = arr[0], second = -1;
+
+    for (int i = 1; i < 5; i++)
+    {
+        if (arr[i] > first)
+        {
+            second = first;
+            first = arr[i];
+        }
+        else if (arr[i] > second && arr[i] != first)
+            second = arr[i];
+    }
+
+    printf("Second Largest = %d", second);
+
+    return 0;
+}
